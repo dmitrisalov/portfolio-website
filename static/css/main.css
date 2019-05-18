@@ -1,0 +1,108 @@
+
+/* ----- Navbar stuff ----- */
+.navbar {
+    background:#f9d342;
+}
+
+/* Buttons on the navbar. */
+.nav-link, .navbar-brand {
+    color: #292826;
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: #292826;
+}
+
+.nav-link {
+    margin-right: 1rem !important;
+}
+
+.nav-link:hover {
+    background: #292826;
+    color: #f9d342;
+}
+
+/* Make the buttons be on the end of the navbar. */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #292826 !important;
+}
+
+/* ----- Header section for the page. ----- */
+.header {
+    background: #292826;
+}
+
+.header .description {
+    position: absolute;
+    top: 15%;
+    margin: auto;
+    padding: 2em;
+}
+
+.header .description h1 {
+    color:#f9d342;
+    line-height: 2;
+}
+
+.header .description p {
+    color:#f4f4f4;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.header .btn-outline-primary {
+    color: #f9d342;
+    border-color: #f9d342;
+}
+
+.header .btn-outline-primary:hover {
+    color: #292826;
+    background-color: #f9d342;
+    border-color: #f9d342;
+}
+
+.header .btn-outline-primary:focus {
+    box-shadow:0 0 0 .2rem rgba(249,211,66,.5)
+}
+
+/* ----- About section on the page. ----- */
+.about {
+    padding: 1em;
+    position: relative;
+    background: #f4f4f4;
+}
+
+.about h1 {
+    color: #f9d342;
+}
+
+.about .container {
+    border-right: 4px solid #297aa3;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about .description {
+    padding: 1em;
+}
+
+.about .description h3 {
+    color: #297aa3;
+    line-height: 2;
+}
+
+.about .description p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #918e88;
+}
