@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+<!-- This block is wrapped within layout.html. -->
+{% block content %}
+
+<!-- The main container for the page. -->
+<div class="container home-page">
+    <!-- The row that contains name, subtitle, and portrait image. -->
+    <div class="row personal-info">
+        <div class="col name">
+            <h1>Hi, I'm Dmitri</h1>
+            <h4>student, software developer</h4>
+            <p>
+                An upcoming senior at  the Universty of Illinois, Urbana-Champaign. Currently 
+                pursuing a Bachelor of Science in Statistics & Computer Science. 
+            </p>
+        </div>
+
+        <div class="col portrait">
+            <img class="img-fluid float-right" src="/static/images/portrait.jpg">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
