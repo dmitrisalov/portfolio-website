@@ -1,6 +1,6 @@
 /* Global properties (text, buttons, etc) */
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, span {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -42,7 +42,7 @@ a:hover {
 }
 
 .name h1, h4 {
-    color: #2343f3;
+    color: #1261a0;
 }
 
 .name h4 {
@@ -68,4 +68,35 @@ a:hover {
     min-height: 15em;
     max-width: 15em;
     max-height: 15em;
+}
+
+/* Rows containing project cards. */
+
+.portfolio {
+    padding-top: 2em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+.project-link, .project-link:hover {
+    text-decoration: none;
+    color: #292826;
+    text-transform: uppercase;
+}
+
+.project-link:hover {
+    opacity: 0.5;
+}
+
+/* Footer section. */
+
+.container-footer {
+    border-top: 1px solid #c0c0c0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.contact-info img {
+    width: 2em;
+    height: 2em;
 }

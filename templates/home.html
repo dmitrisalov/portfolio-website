@@ -20,6 +20,37 @@
             <img class="img-fluid float-right" src="/static/images/portrait.jpg">
         </div>
     </div>
+
+    <!-- Rows that contain project panels. -->
+    <div class="row portfolio">
+        <!-- Wider column. -->
+        <div class="col-md-8 panel-wide panel-left d-flex align-items-stretch">
+            <!-- Pong card. -->
+            <a class="project-link" href="{{ url_for('pong') }}">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <img class="card-img-top" src="/static/images/pong.jpg">
+        
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pong</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Standard column. -->
+        <div class="col-md-4 panel-standard panel-right d-flex align-items-stretch">
+            <!-- Infinity Cube card. -->
+            <a class="project-link" href="{{ url_for('infinity_cube') }}">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <img class="card-img-top" src="/static/images/infinitycube.jpg">
+        
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Infinity Cube</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
