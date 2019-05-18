@@ -8,13 +8,15 @@ app = Flask(__name__)
 def home():
     return render_template("home.html", title="Home")
 
+# Page for Pong.
 @app.route("/pong")
 def pong():
-    return render_template("home.html", title="Pong")
+    return render_template("pong.html", title="Pong")
 
+# Page for Infinity Cube.
 @app.route("/infinity-cube")
 def infinity_cube():
-    return render_template("home.html", title="Infinity Cube")
+    return render_template("infinity_cube.html", title="Infinity Cube")
 
 # For dev environment purposes
 if __name__ == "__main__":
