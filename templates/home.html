@@ -3,61 +3,23 @@
 <!-- This block is wrapped within layout.html. -->
 {% block content %}
 
-<!-- Header: the top section of the page. -->
-<header class="header">
-    <div class="container">
-        <div class="description">
-            <h1>Welcome
-                <p>
-                    Dolor sit amet, consectetur adipiscing elit. Curabitur eget lectus euismod, 
-                    mollis nunc ut, varius nisl. Pellentesque et turpis molestie, varius elit 
-                    rhoncus, viverra nunc. In vulputate libero a orci aliquet auctor ac in mi. 
-                    Duis feugiat arcu quis mauris consectetur eleifend. Donec volutpat blandit 
-                    lectus sed maximus. 
-                </p>
-
-                <button class="btn btn-outline-primary btn-lg">See more</button> 
-            </h1>
+<!-- The main container for the page. -->
+<div class="container home-page">
+    <!-- The row that contains name, subtitle, and portrait image. -->
+    <div class="row personal-info">
+        <div class="col name">
+            <h1>Hi, I'm Dmitri</h1>
+            <h4>student, software developer</h4>
+            <p>
+                An upcoming senior at  the Universty of Illinois, Urbana-Champaign. Currently 
+                pursuing a Bachelor of Science in Statistics & Computer Science. 
+            </p>
         </div>
-    </div>
-</header>
 
-<!-- The About section of the page. -->
-<div class="about">
-    <div class="description text-center">
-        <h1>About Me</h1>
-    </div>
-
-    <div class="row">
-        <!-- Left side of the section. -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="container">
-                <img src="/static/images/portrait.jpg" class="img-fluid">
-            </div>
-        </div>
-        
-        <!-- Right side of the section. -->
-        <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <div class="description">
-                <h3>Dmitri Salov
-                    <p>
-                        Sed ultrices vitae libero eu congue. Nulla erat quam, viverra maximus nunc 
-                        vel, vehicula ornare mauris. Vivamus at leo maximus, accumsan sem eu, 
-                        sodales libero. Pellentesque dapibus, lorem ac porttitor vehicula, lorem 
-                        nunc condimentum quam, dapibus tempor est ipsum eget lectus. Nam mauris 
-                        turpis, vehicula sit amet ullamcorper in, ornare sed velit. 
-                        <br>
-                        <br>
-                        Nulla lobortis 
-                        quis lectus eget malesuada. Integer interdum eros augue, ut imperdiet neque 
-                        mattis ac. Etiam aliquet urna sed erat volutpat, pretium eleifend quam 
-                        feugiat. Duis sit amet semper lacus.
-                    </p>
-                </h3>
-            </div>
+        <div class="col portrait">
+            <img class="img-fluid float-right" src="/static/images/portrait.jpg">
         </div>
     </div>
 </div>
-
 
 {% endblock %}

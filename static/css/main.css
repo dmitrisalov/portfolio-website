@@ -1,108 +1,71 @@
+/* Global properties (text, buttons, etc) */
 
-/* ----- Navbar stuff ----- */
-.navbar {
-    background:#f9d342;
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Buttons on the navbar. */
-.nav-link, .navbar-brand {
+h1, h2, h3, h4, h5, h6, a {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+/* Website header containing link to home and resume. */
+
+.container-header, .name {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.logo a, .resume a {
     color: #292826;
-    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
 }
 
-.navbar-brand:hover {
-    color: #292826;
+.resume {
+    text-align: right;
 }
 
-.nav-link {
-    margin-right: 1rem !important;
+.logo-light {
+    opacity: 0.5;
 }
 
-.nav-link:hover {
-    background: #292826;
-    color: #f9d342;
+/* Row containing my name, subtitle, and portrait image. */
+
+.personal-info {
+    border-bottom: 1px solid #c0c0c0;
 }
 
-/* Make the buttons be on the end of the navbar. */
-.navbar-collapse {
-    justify-content: flex-end;
+.name h1, h4 {
+    color: #2343f3;
 }
 
-.navbar-toggler {
-    background: #292826 !important;
+.name h4 {
+    opacity: .5;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 1em;
+    text-transform: uppercase;
 }
 
-/* ----- Header section for the page. ----- */
-.header {
-    background: #292826;
+.name p {
+    padding-top: 1em;
+    font-size: 18px;
 }
 
-.header .description {
-    position: absolute;
-    top: 15%;
-    margin: auto;
-    padding: 2em;
+.portrait {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-.header .description h1 {
-    color:#f9d342;
-    line-height: 2;
-}
-
-.header .description p {
-    color:#f4f4f4;
-    font-size: 20px;
-    width: 50%;
-    line-height: 1.5;
-}
-
-.header .btn-outline-primary {
-    color: #f9d342;
-    border-color: #f9d342;
-}
-
-.header .btn-outline-primary:hover {
-    color: #292826;
-    background-color: #f9d342;
-    border-color: #f9d342;
-}
-
-.header .btn-outline-primary:focus {
-    box-shadow:0 0 0 .2rem rgba(249,211,66,.5)
-}
-
-/* ----- About section on the page. ----- */
-.about {
-    padding: 1em;
-    position: relative;
-    background: #f4f4f4;
-}
-
-.about h1 {
-    color: #f9d342;
-}
-
-.about .container {
-    border-right: 4px solid #297aa3;
-}
-
-.about img {
-    height: 100%;
-    width: 100%;
+.portrait img {
     border-radius: 50%;
-}
-
-.about .description {
-    padding: 1em;
-}
-
-.about .description h3 {
-    color: #297aa3;
-    line-height: 2;
-}
-
-.about .description p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #918e88;
+    min-width: 15em;
+    min-height: 15em;
+    max-width: 15em;
+    max-height: 15em;
 }

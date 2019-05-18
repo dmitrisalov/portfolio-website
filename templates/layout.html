@@ -14,40 +14,31 @@
         crossorigin="anonymous">
 
         <!-- Custom CSS from 'main.css' -->
-        <link rel ="stylesheet" type="text/css" 
-        href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+        <!-- Google Robot font import. -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
         <!-- 'title' is be assigned in the render_template() for each page. -->
         <title>Dmitri Salov - {{title}}</title>
     </head>
 
     <body>
-        <!-- Navbar -->  
-        <nav class="navbar navbar-expand-lg fixed-top">  
-            <a class="navbar-brand" href="#">Home</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-            aria-expanded="false" aria-label="Toggle navigation">  
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">     
-                <ul class="navbar-nav mr-4">
-                    <li class="nav-item">
-                        <a class="nav-link" data-value="about" href="#">About</a>        
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
-                    </li>
-
-                    <li class="nav-item"> 
-                        <a class="nav-link " data-value="contact" href="#">Contact</a>       
-                    </li> 
-                </ul> 
+        <div class="container container-header">
+            <div class="row">
+                <div class="col logo">
+                    <a href="{{ url_for('home') }}">
+                        <span>dmitri</span><span class="logo-light">salov</span>
+                    </a>
+                </div>
+                
+                <div class="col resume">
+                    <a href="{{ url_for('static', filename='images/resume.pdf') }}">
+                        <span>resume</span>
+                    </a>
+                </div>
             </div>
-        </nav>
+        </div>
 
         <!-- Page-specific html layouts are inserted here. -->
         {% block content %}
