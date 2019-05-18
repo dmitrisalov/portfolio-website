@@ -21,6 +21,10 @@
 
         <!-- 'title' is be assigned in the render_template() for each page. -->
         <title>Dmitri Salov - {{title}}</title>
+
+        <!-- Page-specific header info is inserted here. -->
+        {% block head %}
+        {% endblock %}
     </head>
 
     <body>
@@ -40,7 +44,7 @@
             </div>
         </div>
 
-        <!-- Page-specific html layouts are inserted here. -->
+        <!-- Page-specific html content is inserted here. -->
         {% block content %}
         {% endblock %}
 
@@ -83,8 +87,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
         crossorigin="anonymous"></script>
-        <!-- Custom JavaScript from 'main.js' -->
-        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 
 </html>

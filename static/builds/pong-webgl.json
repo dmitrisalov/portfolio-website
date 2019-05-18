@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Pong",
+"dataUrl": "pong-webgl.data.unityweb",
+"wasmCodeUrl": "pong-webgl.wasm.code.unityweb",
+"wasmFrameworkUrl": "pong-webgl.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}

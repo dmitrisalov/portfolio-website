@@ -100,3 +100,27 @@ a:hover {
     width: 2em;
     height: 2em;
 }
+
+/* Some game-related styles. */
+
+.game {
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.game-title {
+    text-transform: uppercase;
+    color: #292826;
+}
+
+.game-title h1 {
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 0.5em;
+}
+
+.webgl-content {
+    display: inline-block;
+    padding-top: 2em;
+}
+
+/* Unity-specific styles, copy-pasted from generated code. */
