@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+<!-- Unity-specific header info. -->
+{% block head %}
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" href="/static/images/favicon.ico">
+
+<script src="/static/js/UnityProgress.js"></script>
+<script src="/static/builds/cube-UnityLoader.js"></script>
+<script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "static/builds/cube-webgl.json", {onProgress: UnityProgress});
+</script>
+
+{% endblock %}
+
+<!-- This block is wrapped within layout.html. -->
+{% block content %}
+
+<!-- Main container for the page. -->
+<div class="container pong-page">
+    <div class="row text-center game">
+        <div class="col game-title">
+            <h1>infinity cube</h1>
+
+            <!-- The game window itself. -->
+            <div class="webgl-content">
+                <div id="gameContainer" style="width: 1024px; height: 576px"></div>
+            
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

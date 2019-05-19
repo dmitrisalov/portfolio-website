@@ -21,14 +21,18 @@
 
         <!-- 'title' is be assigned in the render_template() for each page. -->
         <title>Dmitri Salov - {{title}}</title>
+
+        <!-- Page-specific header info is inserted here. -->
+        {% block head %}
+        {% endblock %}
     </head>
 
     <body>
         <div class="container container-header">
             <div class="row">
-                <div class="col logo">
+                <div class="col text-logo">
                     <a href="{{ url_for('home') }}">
-                        <span>dmitri</span><span class="logo-light">salov</span>
+                        <span>dmitri</span><span class="text-logo-light">salov</span>
                     </a>
                 </div>
                 
@@ -40,7 +44,7 @@
             </div>
         </div>
 
-        <!-- Page-specific html layouts are inserted here. -->
+        <!-- Page-specific html content is inserted here. -->
         {% block content %}
         {% endblock %}
 
@@ -55,18 +59,18 @@
 
             <!-- Contains Github link. -->
             <div class="row">
-                <div class="col logo text-center">
+                <div class="col text-logo text-center">
                     <a href="https://github.com/dmitrisalov">
-                        <span>git</span><span class="logo-light">hub</span>
+                        <span>git</span><span class="text-logo-light">hub</span>
                     </a>
                 </div>
             </div>
 
             <!-- Contains LinkedIn link. -->
             <div class="row">
-                <div class="col logo text-center">
+                <div class="col text-logo text-center">
                     <a href="https://www.linkedin.com/in/dmitrisalov/">
-                        <span>linked</span><span class="logo-light">in</span>
+                        <span>linked</span><span class="text-logo-light">in</span>
                     </a>
                 </div>
             </div>
@@ -83,8 +87,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
         crossorigin="anonymous"></script>
-        <!-- Custom JavaScript from 'main.js' -->
-        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 
 </html>
