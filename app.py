@@ -18,6 +18,11 @@ def pong():
 def infinity_cube():
     return render_template("infinity_cube.html", title="Infinity Cube")
 
+# Page for Terrain Generator.
+@app.route("/terrain-generator")
+def terrain_generator():
+    return render_template("terrain_generator.html", title="Terrain Generator")
+
 # For dev environment purposes
 if __name__ == "__main__":
     app.run()
